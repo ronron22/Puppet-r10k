@@ -1,2 +1,2 @@
-# Puppet-r10k
-# R10K
+# r10k
+
