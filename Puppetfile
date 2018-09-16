@@ -6,6 +6,7 @@ mod 'local_module', :local => true
 mod 'puppetlabs/ntp', '4.1.0'
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/accounts'
+mod 'deric/accounts'
 
 mod 'apache',
   :git => 'https://github.com/ronron22/puppet-module-apache'
