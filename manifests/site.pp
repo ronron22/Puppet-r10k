@@ -1,6 +1,4 @@
-#hiera_include('classes')
-
-lookup('classes', {merge => unique}).include
+hiera_include('classes')
 
 # always include role
 #include role
@@ -11,7 +9,7 @@ Cron {
 }
 
 File {
-  ignore => ['.svn', '*.swp'],
+  ignore => ['.svn', '*.swp', '.git'],
 }
 
 #class { 'accounts':
