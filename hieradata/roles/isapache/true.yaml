@@ -1,0 +1,62 @@
+---
+classes:
+  - apache::install
+  - apache::configure
+    #- php_fpm
+  - php_fpm::install  
+  - php_fpm::install_modules
+  - php_fpm::configure
+
+apache::install::enable: true
+apache::configure::enable: true
+apache::configure::stopped: false
+
+apache_mods_enabled:
+  - access_compat.load
+  - actions.conf
+  - actions.load
+  - alias.conf
+  - alias.load
+  - auth_basic.load
+  - authn_core.load
+  - authn_file.load
+  - authz_core.load
+  - authz_host.load
+  - authz_user.load
+  - autoindex.conf
+  - autoindex.load
+  - deflate.conf
+  - deflate.load
+  - dir.conf
+  - dir.load
+  - env.load
+  - fastcgi.conf
+  - fastcgi.conf.old
+  - fastcgi.load
+  - filter.load
+  - headers.load
+  - http2.load
+  - mime.conf
+  - mime.load
+  - mpm_prefork.conf
+  - mpm_prefork.load
+  - negotiation.conf
+  - negotiation.load
+  - proxy.conf
+  - proxy_fcgi.load
+  - proxy_http.load
+  - proxy.load
+  - reqtimeout.conf
+  - reqtimeout.load
+  - rewrite.load
+  - rpaf.conf
+  - rpaf.load
+  - setenvif.conf
+  - setenvif.load
+  - socache_shmcb.load
+  - ssl.conf
+  - ssl.load
+  - status.conf
+  - status.load
+  - vhost_alias.load
+

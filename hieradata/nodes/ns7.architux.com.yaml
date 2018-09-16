@@ -1,0 +1,27 @@
+---
+classes:
+  - haproxy
+  - docker::install
+  - apache::cv
+
+#nodename: "%{::trusted.certname}"
+
+haproxy::enable: true
+#haproxy::nodename: "%{::trusted.certname}"
+
+docker::install::enable: true
+
+apache::install::enable: false
+apache::configure::enable: false
+
+apache_conf_enabled:
+  - charset.conf
+  - javascript-common.conf
+  - localized-error-pages.conf
+  - munin.conf
+  - other-vhosts-access-log.conf
+  - security.conf
+  - serve-cgi-bin.conf
+  - zabbix.conf
+
+knot_service_enable: true

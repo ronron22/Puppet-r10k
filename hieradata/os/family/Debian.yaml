@@ -1,0 +1,9 @@
+---
+ssh_packages:
+  - openssh-client
+  - openssh-server
+
+classes:
+  - ssh
+
+ssh::service::enable: true

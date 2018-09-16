@@ -1,0 +1,55 @@
+---
+classes:
+  - base   
+  - haproxy
+  - docker::install
+  - knot::zones
+  - apache::install
+  - apache::configure
+  - apache::vhosts
+  - test_architux  
+  - test_architux::ouap  
+  - role::mutu
+  - accounts::users
+
+haproxy::enable: true
+
+docker::install::enable: true
+
+knot_service_enable: true
+
+apache::configure::stopped: true
+
+apache_sites_enabled:
+  - antonio.architux.com
+  - kartooch.com
+  - status.architux.com
+  - webmail.architux.com
+  - www.architux.com
+  - www.mugairyu.fr
+  - www.opendns.io
+  - www.unigo.fr
+
+apache_conf_enabled:
+  - charset.conf
+  - javascript-common.conf
+  - localized-error-pages.conf
+  - munin.conf
+  - other-vhosts-access-log.conf
+  - security.conf
+  - serve-cgi-bin.conf
+  - zabbix.conf
+
+    #test_architux::gruik: "prout"
+    #test_architux::ouap::grouik: "prout"
+
+accounts::users:
+  sarmoung:
+    uid: 1005
+    gid: 1005
+    comment: sarmoung
+
+accounts::usergroups:
+  sarmoung:
+    - sarmoung
+    - adm
