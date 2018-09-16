@@ -7,8 +7,8 @@ classes:
   - apache::install
   - apache::configure
   - apache::vhosts
-  - local_module::test_architux  
-  - local_module::test_architux::ouap  
+  - test_architux  
+  - test_architux::ouap  
   - role::mutu
     #- accounts::users
 
