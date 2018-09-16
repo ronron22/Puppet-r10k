@@ -1,6 +1,6 @@
 ---
 classes:
-  - base   
+  #- base   
   - haproxy
   - docker::install
   - knot::zones
