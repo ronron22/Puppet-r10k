@@ -7,10 +7,10 @@ classes:
   - apache::install
   - apache::configure
   - apache::vhosts
-  - test_architux  
-  - test_architux::ouap  
+  - local_module::test_architux  
+  - local_module::test_architux::ouap  
   - role::mutu
-  - accounts::users
+    #- accounts::users
 
 haproxy::enable: true
 
