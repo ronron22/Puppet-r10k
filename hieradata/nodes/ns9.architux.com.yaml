@@ -10,6 +10,7 @@ classes:
   - test_architux  
   - test_architux::ouap  
   - role::mutu
+  - '::accounts'
     #- accounts::users
 
 haproxy::enable: true
@@ -46,10 +47,18 @@ apache_conf_enabled:
 accounts::users:
   sarmoung:
     uid: 1005
-    gid: 1005
-    comment: sarmoung
+    comment: "Sarmoung"
+    groups: ["sudo", "adm", "sarmoung"]
+    shell: "/bin/bash"
+    pwhash: "$6$G0GA/w9wys9$fmw4xIcDTR5q3CgZdDAy917fX03TYdacHOB8rSc7f95K.ilU4q1S/xOwiGWo1g5O/aU/r95cBHrIq33Q6K6yc0"
 
-accounts::usergroups:
-  sarmoung:
-    - sarmoung
-    - adm
+#accounts::users:
+#  sarmoung:
+#    uid: 1005
+#    gid: 1005
+#    comment: sarmoung
+
+#accounts::usergroups:
+#  sarmoung:
+#    - sarmoung
+#    - adm
