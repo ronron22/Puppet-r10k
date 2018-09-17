@@ -4,6 +4,7 @@ ssh_packages:
   - openssh-server
 
 classes:
+  - base
   - ssh
 
 ssh::service::enable: true
