@@ -3,9 +3,6 @@ nodename: "%{::trusted.certname}"
 
 puppet_manage_header: "This file is managed by Puppet"
 
-Classes:
-  - ntp
-
 ntp::restrict:
   - '-4 default kod nomodify notrap nopeer noquery'
   - '-6 default kod nomodify notrap nopeer noquery'
