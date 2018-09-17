@@ -1,6 +1,10 @@
 forge 'forge.puppetlabs.com'
 
+# exclude local module
 mod 'local_module', :local => true
+#
+deploy:
+  purge_whitelist: [ 'custom.json', '**/*.xpp' ]
 
 # Forge Modules
 mod 'puppetlabs/ntp', '4.1.0'
