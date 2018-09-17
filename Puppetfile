@@ -5,6 +5,7 @@ mod 'local_module', :local => true
 # Forge Modules
 mod 'puppetlabs/ntp', '4.1.0'
 mod 'puppetlabs/stdlib'
+mod 'puppetlabs-concat', '5.0.0'
 mod 'deric-accounts', '1.5.3'
 mod 'saz-ssh', '4.0.0'
 
