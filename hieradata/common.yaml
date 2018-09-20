@@ -19,3 +19,16 @@ ntp::servers:
   - '1.fr..pool.ntp.org'
   - '2.fr.pool.ntp.org'
 
+ssh::server_options:
+  - Port: '2224'
+  - Protocol: '2'
+  - LoginGraceTime: '120'
+  - PermitRootLogin: 'without-password'
+  - StrictModes: 'yes'
+  - IgnoreRhosts: 'yes'
+  - RhostsRSAAuthentication: 'no'
+  - HostbasedAuthentication: 'no'
+  - PermitEmptyPasswords: 'no'
+  - ChallengeResponseAuthentication: 'no'
+  - UsePAM: 'yes'
+  - TCPKeepAlive: 'yes'
