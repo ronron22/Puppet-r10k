@@ -1,4 +1,3 @@
-class role::mutu {
-    include profile::base
+class role::mutu inherits role{
     include profile::mail
 }
