@@ -1,4 +1,4 @@
 class profile::mail {
-		include saslauth
-    include cyrus_imap
+	include saslauth
+	include cyrus_imap
 }
