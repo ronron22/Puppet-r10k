@@ -1,15 +1,15 @@
 ---
 classes:
-  - apache::install
-  - apache::configure
-    #- php_fpm
+  #- apache::install
+  #- apache::configure
+  #- php_fpm
   - php_fpm::install  
   - php_fpm::install_modules
   - php_fpm::configure
 
 apache::install::enable: true
-apache::configure::enable: true
-apache::configure::stopped: false
+apache::config::enable: true
+apache::service::stopped: false
 
 apache_mods_enabled:
   - access_compat.load
@@ -59,4 +59,3 @@ apache_mods_enabled:
   - status.conf
   - status.load
   - vhost_alias.load
-
