@@ -10,11 +10,11 @@ classes:
   - role::mutu
 
 haproxy::enable: true
-
 docker::install::enable: true
-
 knot_service_enable: true
-
+cyrus_imap::name: cyrus-imapd
+cyrus_imap::enable: false
+cyrus_imap::status: running
 apache::service::stopped: true
 
 apache_sites_enabled:
