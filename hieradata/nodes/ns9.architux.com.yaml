@@ -12,9 +12,11 @@ classes:
 haproxy::enable: true
 docker::install::enable: true
 knot_service_enable: true
-cyrus_imap::cyrus_imap_name: 'cyrus-imapd'
-cyrus_imap::service_enable: false
-cyrus_imap::service_status: 'running'
+
+cyrus_imap::service::service_name: 'cyrus-imapd'
+cyrus_imap::service::service_enable: false
+cyrus_imap::service::service_status: 'stopped'
+
 apache::service::stopped: true
 
 apache_sites_enabled:
