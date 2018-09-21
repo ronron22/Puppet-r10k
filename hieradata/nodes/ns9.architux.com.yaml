@@ -8,7 +8,6 @@ classes:
   - test_architux  
   - test_architux::ouap  
   - role::mutu
-  - role::web
 
 haproxy::enable: true
 
