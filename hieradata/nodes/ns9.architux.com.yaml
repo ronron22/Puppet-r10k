@@ -5,12 +5,10 @@ classes:
   - haproxy
   - docker::install
   - knot::zones
-  - apache::install
-  - apache::configure
-  - apache::vhosts
   - test_architux  
   - test_architux::ouap  
   - role::mutu
+  - role::web
 
 haproxy::enable: true
 
@@ -18,7 +16,7 @@ docker::install::enable: true
 
 knot_service_enable: true
 
-apache::configure::stopped: true
+apache::service::stopped: true
 
 apache_sites_enabled:
   - antonio.architux.com

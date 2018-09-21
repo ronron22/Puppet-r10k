@@ -12,7 +12,7 @@ haproxy::enable: true
 docker::install::enable: true
 
 apache::install::enable: false
-apache::configure::enable: false
+apache::config::enable: false
 
 apache_conf_enabled:
   - charset.conf

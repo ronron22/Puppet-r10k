@@ -1,7 +1,5 @@
 ---
 classes:
-  #- apache::install
-  #- apache::configure
   #- php_fpm
   - php_fpm::install  
   - php_fpm::install_modules
