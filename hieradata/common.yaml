@@ -1,9 +1,4 @@
 ---
-
-classes:
-  - ntp
-  - ssh
-
 nodename: "%{::trusted.certname}"
 
 puppet_manage_header: "This file is managed by Puppet"
