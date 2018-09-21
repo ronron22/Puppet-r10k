@@ -34,7 +34,6 @@ apache_conf_enabled:
   - other-vhosts-access-log.conf
   - security.conf
   - serve-cgi-bin.conf
-  - zabbix.conf
 
     #test_architux::gruik: "prout"
     #test_architux::ouap::grouik: "prout"
