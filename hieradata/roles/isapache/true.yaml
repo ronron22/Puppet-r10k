@@ -1,10 +1,4 @@
 ---
-classes:
-  #- php_fpm
-  - php_fpm::install  
-  - php_fpm::install_modules
-  - php_fpm::configure
-
 apache::install::enable: true
 apache::config::enable: true
 apache::service::stopped: false
