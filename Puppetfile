@@ -12,6 +12,12 @@ mod 'saz-ssh', '4.0.0'
 
 mod 'apache',
   :git => 'https://github.com/ronron22/puppet-module-apache'
+mod 'cyrus_imap',
+  :git => 'https://github.com/ronron22/puppet-module-cyrus_imap'
+mod 'docker',
+  :git => 'https://github.com/ronron22/puppet-module-docker'
+mod 'postfix',
+  :git => 'https://github.com/ronron22/puppet-module-postfix'
 mod 'php_fpm',
   :git => 'https://github.com/ronron22/puppet-module-php_fpm'
 mod 'haproxy',
@@ -20,9 +26,3 @@ mod 'knot',
   :git => 'https://github.com/ronron22/puppet-module-knot'
 mod 'saslauth',
   :git => 'https://github.com/ronron22/puppet-module-saslauth'
-mod 'cyrus_imap',
-  :git => 'https://github.com/ronron22/puppet-module-cyrus_imap'
-mod 'docker',
-  :git => 'https://github.com/ronron22/puppet-module-docker'
-mod 'postfix',
-  :git => 'https://github.com/ronron22/puppet-module-postfix'
