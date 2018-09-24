@@ -4,5 +4,6 @@ class role::mutu inherits role {
     include profile::web
     include profile::php_fpm
     include profile::dns
+    include profile::haproxy
 
 }
