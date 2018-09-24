@@ -11,7 +11,3 @@ apt::sources:
     include:
       src: false
       deb: true
-
-  'rspamd':
-    location: 'http://rspamd.com/apt-stable'
-    repos: 'main'

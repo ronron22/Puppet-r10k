@@ -1,0 +1,5 @@
+---
+apt::sources:
+  'rspamd':
+    location: 'http://rspamd.com/apt-stable'
+    repos: 'main'
