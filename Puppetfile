@@ -26,3 +26,5 @@ mod 'knot',
   :git => 'https://github.com/ronron22/puppet-module-knot'
 mod 'saslauth',
   :git => 'https://github.com/ronron22/puppet-module-saslauth'
+mod 'rspamd',
+  :git => 'https://github.com/ronron22/puppet-module-rspamd'
