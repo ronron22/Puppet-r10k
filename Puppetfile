@@ -32,5 +32,5 @@ mod 'rspamd',
   :git => 'https://github.com/ronron22/puppet-module-rspamd'
 mod 'haproxy',
   :git => 'https://github.com/ronron22/puppet-module-haproxy'
-mod 'clamav-milter',
+mod 'clamavmilter',
   :git => 'https://github.com/ronron22/puppet-module-clamav-milter'
