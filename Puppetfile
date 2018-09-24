@@ -30,3 +30,7 @@ mod 'saslauth',
   :git => 'https://github.com/ronron22/puppet-module-saslauth'
 mod 'rspamd',
   :git => 'https://github.com/ronron22/puppet-module-rspamd'
+mod 'haproxy',
+  :git => 'https://github.com/ronron22/puppet-module-haproxy'
+mod 'clamav-milter',
+  :git => 'https://github.com/ronron22/puppet-module-clamav-milter'
