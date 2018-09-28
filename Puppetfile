@@ -2,6 +2,7 @@ forge 'forge.puppetlabs.com'
 
 # exclude local module
 mod 'local_module', :local => true
+mod 'local_profile', :local => true
 
 # Forge Modules
 mod 'puppetlabs/ntp', '4.1.0'
