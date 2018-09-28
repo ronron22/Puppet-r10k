@@ -27,3 +27,11 @@ ssh::server_options:
    ChallengeResponseAuthentication: 'no'
    UsePAM: 'yes'
    TCPKeepAlive: 'yes'
+
+profile::hiera_test::ssl: false
+profile::hiera_test::backups_enabled: true
+#profile::hiera_test::site_alias: 'toto'
+profile::hiera_test::gruiks:
+  - 'truc'
+  - 'machin'
+
