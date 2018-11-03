@@ -14,6 +14,16 @@ docker::install::enable: true
 apache::install::enable: false
 apache::config::enable: false
 
+apache_sites_enabled:
+  - antonio.architux.com
+  - kartooch.com
+  - status.architux.com
+  - webmail.architux.com
+  - www.architux.com
+  - www.mugairyu.fr
+  - www.opendns.io
+  - www.unigo.fr
+
 apache_conf_enabled:
   - charset.conf
   - javascript-common.conf
