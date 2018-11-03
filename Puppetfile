@@ -12,6 +12,7 @@ mod 'deric-accounts', '1.5.3'
 mod 'saz-ssh', '4.0.0'
 mod 'puppetlabs-apt', '6.0.0'
 mod 'puppetlabs-mysql', '6.1.0'
+mod 'puppet-mumble', '2.1.2'
 
 mod 'apache',
   :git => 'https://github.com/ronron22/puppet-module-apache'
