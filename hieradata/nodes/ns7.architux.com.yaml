@@ -1,7 +1,8 @@
 ---
 classes:
-  - haproxy
-  - docker::install
+  #- haproxy
+  #- docker::install
+  - role::mutu
   - apache::cv
 
 #nodename: "%{::trusted.certname}"
@@ -9,7 +10,7 @@ classes:
 haproxy::enable: true
 #haproxy::nodename: "%{::trusted.certname}"
 
-docker::install::enable: true
+docker::install::enable: false
 
 apache::install::enable: false
 apache::config::enable: false
