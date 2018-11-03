@@ -21,13 +21,13 @@ mod 'cyrus_imap',
 mod 'docker',
   :git => 'https://github.com/ronron22/puppet-module-docker'
 mod 'postfix',
-  :git => 'https://github.com/ronron22/puppet-module-postfix'
+  :git => 'https://gitlab.com/ronron22/puppet-module-postfix'
 mod 'php_fpm',
   :git => 'https://github.com/ronron22/puppet-module-php_fpm'
 mod 'haproxy',
   :git => 'https://github.com/ronron22/puppet-module-haproxy'
 mod 'knot',
-  :git => 'https://github.com/ronron22/puppet-module-knot'
+  :git => 'https://gitlab.com/ronron22/puppet-module-knot'
 mod 'saslauth',
   :git => 'https://github.com/ronron22/puppet-module-saslauth'
 mod 'rspamd',
