@@ -8,6 +8,7 @@ classes:
   - test_architux  
   - test_architux::ouap  
   - role::mutu
+  - role::voip
 
 haproxy::enable: true
 docker::install::enable: true
